@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="69f0ddf0-0649-4c7b-b346-29c56f700b84" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Import csv-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Import csv-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Import csv.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Import csv.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/villes_france.csv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,10 +53,19 @@
       <updated>1575884887312</updated>
       <workItem from="1575884893124" duration="352000" />
       <workItem from="1575896588366" duration="2117000" />
+      <workItem from="1575965225771" duration="555000" />
+      <workItem from="1575970649603" duration="103000" />
+      <workItem from="1575984788082" duration="1814000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="240" y="77" key="#Inspections" timestamp="1575986238761">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="240" y="77" key="#Inspections/0.23.1280.777@0.23.1280.777" timestamp="1575986238761" />
   </component>
 </project>
