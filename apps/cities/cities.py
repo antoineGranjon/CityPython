@@ -24,6 +24,11 @@ def show_simplified(city, max_city):
     return city.head(max_city)
 
 
+def narrow_column(city):
+    return DataFrame(city, columns=['ville_nom', 'ville_population_2012'])
+
+
 def show_graph(city):
-    plotVilles = DataFrame(city, columns=['ville_nom', 'ville_population_2012'])
+    plotVilles = narrow_column(city)
     return plotVilles.head(10).plot(x='ville_nom', y='ville_population_2012', kind='barh')
+
