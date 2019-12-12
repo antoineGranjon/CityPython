@@ -2,9 +2,10 @@ import numpy as np
 import pandas as pd
 from pandas import DataFrame
 import matplotlib.pyplot as plt
+from settings import graph_size, array_size
 
 
-def read_csv(file_path):
+def read_from_csv(file_path):
     return pd.read_csv(file_path, names=['ville_id', 'ville_departement', 'ville_slug', 'ville_nom', 'ville_nom_simple',
                                          'ville_nom_reel', 'ville_nom_soundex', 'ville_nom_metaphone',
                                          'ville_code_postal', 'ville_commune', 'ville_code_commune',
@@ -16,19 +17,34 @@ def read_csv(file_path):
                        low_memory=False)
 
 
-def city_sort_ascending(city):
+def ascending_sort(city):
     return city.sort_values('ville_population_2012', ascending=False)
 
 
-def show_simplified(city, max_city):
-    return city.head(max_city)
+def show_simplified(city, array_size):
+    return city.head(array_size)
 
 
-def narrow_column(city):
+def prepare_data_from_csv(csv_path):
+    cities = read_from_csv(csv_path)
+    return prepare_data(cities)
+
+
+def prepare_data(cities):
+    sorted = ascending_sort(cities)
+    city_simplified = show_simplified(sorted, 50)
+    cities_50_reduced = reduce_dataframe(city_simplified)
+    return cities_50_reduced
+
+
+def reduce_dataframe(city):
     return DataFrame(city, columns=['ville_nom', 'ville_population_2012'])
 
 
-def show_graph(city):
-    plotVilles = narrow_column(city)
-    return plotVilles.head(10).plot(x='ville_nom', y='ville_population_2012', kind='barh')
+def prepare_graph(city, graph_size):
+    return city.head(graph_size).plot(x='ville_nom', y='ville_population_2012', kind='barh')
 
+
+def show_graph(cities, graph_size):
+    prepare_graph(cities, graph_size)
+    plt.show()

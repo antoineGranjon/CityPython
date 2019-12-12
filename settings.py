@@ -1,2 +1,3 @@
 csv = 'datas/villes_france.csv'
-max_city = 50
+array_size = 50
+graph_size = 10
