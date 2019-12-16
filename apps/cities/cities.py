@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 from pandas import DataFrame
 import matplotlib.pyplot as plt
-from settings import graph_size, array_size
+from settings import GRAPH_SIZE, ARRAY_SIZE
 
 
 def read_from_csv(file_path):
@@ -25,6 +25,19 @@ def show_simplified(city, array_size):
     return city.head(array_size)
 
 
+def reduce_dataframe(city):
+    return DataFrame(city, columns=['ville_nom', 'ville_population_2012', 'ville_code_commune'])
+
+
+def prepare_graph(city, graph_size):
+    return city.head(graph_size).plot(x='ville_nom', y='ville_population_2012', kind='barh')
+
+
+def show_graph(cities, graph_size):
+    prepare_graph(cities, graph_size)
+    plt.show()
+
+
 def prepare_data_from_csv(csv_path):
     cities = read_from_csv(csv_path)
     return prepare_data(cities)
@@ -35,16 +48,3 @@ def prepare_data(cities):
     city_simplified = show_simplified(sorted, 50)
     cities_50_reduced = reduce_dataframe(city_simplified)
     return cities_50_reduced
-
-
-def reduce_dataframe(city):
-    return DataFrame(city, columns=['ville_nom', 'ville_population_2012'])
-
-
-def prepare_graph(city, graph_size):
-    return city.head(graph_size).plot(x='ville_nom', y='ville_population_2012', kind='barh')
-
-
-def show_graph(cities, graph_size):
-    prepare_graph(cities, graph_size)
-    plt.show()

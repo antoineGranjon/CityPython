@@ -1,4 +1,4 @@
-from settings import csv
+from settings import CSV_CITIES
 from apps.cities.cities import read_from_csv, ascending_sort, show_simplified, reduce_dataframe
 
 
@@ -20,8 +20,8 @@ def test_csv_length():
 
 def test_column():
     narrowed = reduce_dataframe(get_csv())
-    assert list(narrowed.columns == ['ville_nom', 'ville_population_2012'])
+    assert list(narrowed.columns == ['ville_nom', 'ville_population_2012', 'ville_code_commune'])
 
 
 def get_csv():
-    return read_from_csv(csv)
+    return read_from_csv(CSV_CITIES)
