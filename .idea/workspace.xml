@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/cities/calcul_critere.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/cities/calcul_critere.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/cities/merge.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/cities/merge.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -214,7 +215,7 @@
       <workItem from="1576224680442" duration="15171000" />
       <workItem from="1576482849555" duration="6216000" />
       <workItem from="1576490354431" duration="12248000" />
-      <workItem from="1576568481476" duration="946000" />
+      <workItem from="1576568481476" duration="3424000" />
     </task>
     <servers />
   </component>
