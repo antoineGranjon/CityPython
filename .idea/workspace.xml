@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="69f0ddf0-0649-4c7b-b346-29c56f700b84" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/cities/cities.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/cities/cities.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_cities.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_cities.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/cities/calcul_critere.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/cities/calcul_critere.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/cities/merge.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/cities/merge.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +213,8 @@
       <workItem from="1576137492274" duration="11620000" />
       <workItem from="1576224680442" duration="15171000" />
       <workItem from="1576482849555" duration="6216000" />
-      <workItem from="1576490354431" duration="7973000" />
+      <workItem from="1576490354431" duration="12248000" />
+      <workItem from="1576568481476" duration="946000" />
     </task>
     <servers />
   </component>

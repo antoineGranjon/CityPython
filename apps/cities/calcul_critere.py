@@ -10,7 +10,7 @@ def get_schools_from_csv(file_path):
 
 
 def reduce_dataframe(schools):
-    return DataFrame(schools, columns=['Code commune', 'Taux Brut de Réussite Total séries', 'Taux_Mention_brut_toutes_series'])
+    return DataFrame(schools, columns=['Code commune', 'Taux Brut de Réussite Total séries', 'Taux_Mention_brut_toutes_series', 'Note globale'])
 
 
 def sort_schools_by_insee(schools):
@@ -35,4 +35,5 @@ def prepare_data(schools):
         schools['Code commune'] = np.where(schools['Code commune'].isin(city[1]), city[0], schools['Code commune'])
     reduced_schools = reduce_dataframe(schools)
     grouped_schools = group_schools_by_insee(reduced_schools)
+    grouped_schools['Note globale'] = (grouped_schools['Taux_Mention_brut_toutes_series'] * 100) / grouped_schools['Taux Brut de Réussite Total séries']
     return grouped_schools
