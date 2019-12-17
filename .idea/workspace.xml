@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="69f0ddf0-0649-4c7b-b346-29c56f700b84" name="Default Changelist" comment="" />
+    <list default="true" id="69f0ddf0-0649-4c7b-b346-29c56f700b84" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/cities/cities.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/cities/cities.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/cities/city_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/cities/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/schools/school_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/schools/models.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,11 +53,11 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/datas" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/jupyter" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/datas" />
     </key>
   </component>
   <component name="RunManager" selected="Python.run">
@@ -210,7 +215,7 @@
       <workItem from="1576482849555" duration="6216000" />
       <workItem from="1576490354431" duration="12248000" />
       <workItem from="1576568481476" duration="5817000" />
-      <workItem from="1576577733801" duration="5244000" />
+      <workItem from="1576577733801" duration="7446000" />
     </task>
     <servers />
   </component>

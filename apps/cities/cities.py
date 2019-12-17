@@ -3,6 +3,7 @@ import pandas as pd
 from pandas import DataFrame
 import matplotlib.pyplot as plt
 from settings import GRAPH_SIZE, ARRAY_SIZE
+from apps.cities.models import City
 
 
 def read_from_csv(file_path):
@@ -48,3 +49,7 @@ def prepare_data(cities):
     city_simplified = show_simplified(sorted, 50)
     cities_50_reduced = reduce_dataframe(city_simplified)
     return cities_50_reduced
+
+
+def add_cities_to_database():
+    City.insert_many()

@@ -1,5 +1,5 @@
 from peewee import *
-from apps.cities.city_model import City
+from apps.cities.models import City
 from database import db
 
 

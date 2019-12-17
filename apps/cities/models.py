@@ -6,8 +6,8 @@ class City(Model):
     name = CharField()
     code_insee = CharField(primary_key=True)
     population = AutoField()
-    latitude = FloatField()
-    longitude = FloatField()
+    latitude = DecimalField()
+    longitude = DecimalField()
 
     class Meta:
         database = db
