@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="69f0ddf0-0649-4c7b-b346-29c56f700b84" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/cities/calcul_critere.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/schools/calcul_critere.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/cities/merge.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/schools/merge.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test.ipynb" afterDir="false" />
-    </list>
+    <list default="true" id="69f0ddf0-0649-4c7b-b346-29c56f700b84" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,7 +91,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apps/schools/calcul_critere.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apps/schools/schools.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -154,6 +148,9 @@
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -213,7 +210,7 @@
       <workItem from="1576482849555" duration="6216000" />
       <workItem from="1576490354431" duration="12248000" />
       <workItem from="1576568481476" duration="5817000" />
-      <workItem from="1576577733801" duration="5091000" />
+      <workItem from="1576577733801" duration="5244000" />
     </task>
     <servers />
   </component>
@@ -269,10 +266,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="149" y="50" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1576490435692" />
-    <state width="640" height="388" key="XDebugger.FullValuePopup" timestamp="1576588456603">
+    <state width="640" height="388" key="XDebugger.FullValuePopup" timestamp="1576590830046">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="640" height="388" key="XDebugger.FullValuePopup/0.23.1280.777@0.23.1280.777" timestamp="1576588456603" />
+    <state width="640" height="388" key="XDebugger.FullValuePopup/0.23.1280.777@0.23.1280.777" timestamp="1576590830046" />
     <state x="306" y="54" width="683" height="714" key="find.popup" timestamp="1576576638615">
       <screen x="0" y="23" width="1280" height="777" />
     </state>

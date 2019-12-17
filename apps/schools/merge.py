@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 from apps.cities.cities import prepare_data_from_csv
-from apps.schools.calcul_critere import prepare_data_from_csv_schools
+from apps.schools.schools import prepare_data_from_csv_schools
 
 
 def merge_cities_and_schools(csv_cities_path, csv_schools_path):
