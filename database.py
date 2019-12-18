@@ -1,3 +1,3 @@
 from peewee import *
 
-db = SqliteDatabase('city.db')
+db = SqliteDatabase('cities.db')

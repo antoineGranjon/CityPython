@@ -3,11 +3,14 @@ from database import db
 
 
 class City(Model):
-    name = CharField()
     code_insee = CharField(primary_key=True)
-    population = AutoField()
-    latitude = DecimalField()
-    longitude = DecimalField()
+    name = CharField()
+    population = IntegerField()
+    latitude = DecimalField(max_digits=9, decimal_places=6)
+    longitude = DecimalField(max_digits=9, decimal_places=6)
 
     class Meta:
-        database = db
+        database = db  # This model uses the "cities.db" database.
+
+
+City.create_table()

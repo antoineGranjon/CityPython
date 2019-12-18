@@ -1,5 +1,5 @@
 from settings import CSV_CITIES
-from apps.cities.cities import read_from_csv, ascending_sort, show_simplified, reduce_dataframe
+from apps.cities.cities import get_cities_from_csv, cities_sort_asc, limit_dataframe_records, reduce_dataframe_cities
 
 
 def test_read_csv():
@@ -8,20 +8,20 @@ def test_read_csv():
 
 
 def test_sorted_csv():
-    sorted = ascending_sort(get_csv())
+    sorted = cities_sort_asc(get_csv())
     assert sorted['ville_nom'].iloc[0] == "PARIS"
 
 
 def test_csv_length():
     max_city = 10
-    city_simplified = show_simplified(get_csv(), max_city)
+    city_simplified = limit_dataframe_records(get_csv(), max_city)
     assert len(city_simplified) == max_city
 
 
 def test_column():
-    narrowed = reduce_dataframe(get_csv())
-    assert list(narrowed.columns == ['ville_nom', 'ville_population_2012', 'ville_code_commune'])
+    narrowed = reduce_dataframe_cities(get_csv())
+    assert list(narrowed.columns == ['ville_nom', 'ville_population_2012','ville_code_commune','ville_longitude_deg', 'ville_latitude_deg'])
 
 
 def get_csv():
-    return read_from_csv(CSV_CITIES)
+    return get_cities_from_csv()
