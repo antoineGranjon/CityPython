@@ -1,5 +1,6 @@
 from settings import CSV_CITIES
-from apps.cities.controller import get_cities_from_csv, cities_sort_asc, limit_dataframe_records, reduce_dataframe_cities
+from apps.cities.controller import get_cities_from_csv, limit_dataframe_records
+from project.functions import ascending_sort_datafram, reduce_dataframe
 
 
 def test_read_csv():
@@ -8,7 +9,7 @@ def test_read_csv():
 
 
 def test_sorted_csv():
-    sorted = cities_sort_asc(get_csv())
+    sorted = ascending_sort_datafram(get_csv(), 'ville_population_2012')
     assert sorted['ville_nom'].iloc[0] == "PARIS"
 
 
@@ -19,7 +20,7 @@ def test_csv_length():
 
 
 def test_column():
-    narrowed = reduce_dataframe_cities(get_csv())
+    narrowed = reduce_dataframe(get_csv(), ['ville_nom', 'ville_population_2012','ville_code_commune', 'ville_longitude_deg', 'ville_latitude_deg'])
     assert list(narrowed.columns == ['ville_nom', 'ville_population_2012','ville_code_commune','ville_longitude_deg', 'ville_latitude_deg'])
 
 
