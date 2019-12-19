@@ -1,5 +1,5 @@
 from settings import CSV_CITIES
-from apps.cities.cities import get_cities_from_csv, cities_sort_asc, limit_dataframe_records, reduce_dataframe_cities
+from apps.cities.controller import get_cities_from_csv, cities_sort_asc, limit_dataframe_records, reduce_dataframe_cities
 
 
 def test_read_csv():

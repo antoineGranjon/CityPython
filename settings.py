@@ -10,3 +10,7 @@ CODE_INSEE = [
     ['13055', ['13201', '13202', '13203', '13204', '13205', '13206', '13207', '13208', '13209', '13210', '13211', '13212',
      '13213', '13214', '13215', '13216']]
 ]
+
+SCHOOLS_COLUMNS = ['Code commune', 'Taux Brut de Réussite Total séries', 'Taux_Mention_brut_toutes_series', 'Note globale']
+
+CITIES_COLUMNS = ['ville_nom', 'ville_population_2012','ville_code_commune', 'ville_longitude_deg', 'ville_latitude_deg']
