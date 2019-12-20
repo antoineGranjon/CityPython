@@ -1,5 +1,6 @@
 CSV_CITIES = 'datas/villes_france.csv'
 CSV_SCHOOLS = 'datas/lycee.csv'
+CSV_DOCTORS = 'datas/medecins.csv'
 ARRAY_SIZE = 50
 GRAPH_SIZE = 10
 

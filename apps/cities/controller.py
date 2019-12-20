@@ -1,5 +1,4 @@
 import pandas as pd
-
 from apps.cities.models import City
 from settings import CSV_CITIES
 from project.functions import ascending_sort_datafram, limit_dataframe_records, reduce_dataframe, \
