@@ -22,5 +22,5 @@ def dataframe_to_dict(df):
     return dict_df
 
 
-def store_datas_in_dbb(list_dict, model):
+def store_datas_in_ddb(list_dict, model):
     return model.insert_many(list_dict).execute()

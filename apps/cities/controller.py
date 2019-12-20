@@ -3,7 +3,7 @@ import pandas as pd
 from apps.cities.models import City
 from settings import CSV_CITIES
 from project.functions import ascending_sort_datafram, limit_dataframe_records, reduce_dataframe, \
-    rename_dataframe_columns, dataframe_to_dict, store_datas_in_dbb
+    rename_dataframe_columns, dataframe_to_dict, store_datas_in_ddb
 
 
 def get_cities_from_csv():
@@ -39,6 +39,6 @@ def parse_csv_cities_to_database():
     cities = prepare_data_from_csv()
     cities_dataframe_renamed = rename_dataframe_columns(cities, {"ville_nom": "name", "ville_population_2012": "population", "ville_code_commune": "code_insee", "ville_longitude_deg": "longitude", "ville_latitude_deg": "latitude"})
     dic_cities = dataframe_to_dict(cities_dataframe_renamed)
-    store_datas_in_dbb(dic_cities, City)
-    cities_dbb = City.select().dicts()
-    return cities_dbb
+    store_datas_in_ddb(dic_cities, City)
+    cities_ddb = City.select().dicts()
+    return cities_ddb
