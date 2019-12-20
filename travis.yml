@@ -1,0 +1,13 @@
+# 1 - Se créer un compte sur https://travis-ci.com/
+# 2 - Ajouter votre répo à Travis
+# 3 - Ajouter ce fichier à votre répo puis commit+push
+
+language: python
+python:
+  - 3.5
+  - 3.6
+before_install:
+  - pip install -U pytest
+install:
+  - pip install pandas peewee matplotlib haversine
+script: pytest -v  # run tests

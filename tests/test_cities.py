@@ -19,7 +19,7 @@ def test_csv_length():
     assert len(city_simplified) == max_city
 
 
-def test_column():
+def test_reduce_dataframe():
     narrowed = reduce_dataframe(get_csv(), ['ville_nom', 'ville_population_2012','ville_code_commune', 'ville_longitude_deg', 'ville_latitude_deg'])
     assert list(narrowed.columns == ['ville_nom', 'ville_population_2012','ville_code_commune','ville_longitude_deg', 'ville_latitude_deg'])
 
